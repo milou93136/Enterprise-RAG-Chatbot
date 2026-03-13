@@ -1,0 +1,23 @@
+# Environnement Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Variables d'environnement (NE JAMAIS commiter !)
+.env
+
+# Base de données vectorielle (générée automatiquement)
+chroma_db/
+
+# Fichiers temporaires
+*.tmp
+*.log
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp

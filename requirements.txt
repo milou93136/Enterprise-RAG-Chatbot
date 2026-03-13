@@ -1,0 +1,29 @@
+# ============================================================
+# Enterprise RAG Chatbot — Dépendances Python
+# ============================================================
+# Installation : pip install -r requirements.txt
+# Python recommandé : 3.10 ou 3.11
+
+# --- Framework d'orchestration IA ---
+langchain==0.3.14
+langchain-core==0.3.29
+langchain-community==0.3.14
+langchain-openai==0.2.14          # Backend OpenAI (GPT + embeddings)
+langchain-huggingface==0.1.2      # Backend HuggingFace (embeddings locaux)
+
+# --- Modèles d'embeddings locaux ---
+sentence-transformers==3.3.1      # all-MiniLM-L6-v2 et autres modèles SBERT
+torch==2.5.1                      # PyTorch (CPU uniquement par défaut)
+
+# --- Base de données vectorielle ---
+chromadb==0.5.23                  # ChromaDB — stockage vectoriel local persistant
+
+# --- Chargement de documents ---
+pypdf==5.1.0                      # Lecture de fichiers PDF
+python-docx==1.1.2                # Optionnel : support .docx
+
+# --- Interface utilisateur ---
+streamlit==1.41.1                 # Framework d'interface web
+
+# --- Utilitaires ---
+python-dotenv==1.0.1              # Chargement des variables d'environnement (.env)
